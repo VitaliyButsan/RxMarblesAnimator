@@ -1,0 +1,373 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5870CB412558061B00E65C4B /* SignalPositionPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5870CB402558061B00E65C4B /* SignalPositionPreferenceKey.swift */; };
+		58A557CB254D738F00B0DC32 /* RxMarblesAnimatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A557CA254D738F00B0DC32 /* RxMarblesAnimatorApp.swift */; };
+		58A557CD254D738F00B0DC32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A557CC254D738F00B0DC32 /* ContentView.swift */; };
+		58A557CF254D739300B0DC32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58A557CE254D739300B0DC32 /* Assets.xcassets */; };
+		58A557D2254D739300B0DC32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58A557D1254D739300B0DC32 /* Preview Assets.xcassets */; };
+		58A557DF254D834900B0DC32 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A557DE254D834900B0DC32 /* Home.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5870CB402558061B00E65C4B /* SignalPositionPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalPositionPreferenceKey.swift; sourceTree = "<group>"; };
+		58A557C7254D738F00B0DC32 /* RxMarblesAnimator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxMarblesAnimator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		58A557CA254D738F00B0DC32 /* RxMarblesAnimatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxMarblesAnimatorApp.swift; sourceTree = "<group>"; };
+		58A557CC254D738F00B0DC32 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		58A557CE254D739300B0DC32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		58A557D1254D739300B0DC32 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		58A557D3254D739300B0DC32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58A557DE254D834900B0DC32 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58A557C4254D738F00B0DC32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5870CB3F255805BE00E65C4B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5870CB402558061B00E65C4B /* SignalPositionPreferenceKey.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		58A557BE254D738F00B0DC32 = {
+			isa = PBXGroup;
+			children = (
+				58A557C9254D738F00B0DC32 /* RxMarblesAnimator */,
+				58A557C8254D738F00B0DC32 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		58A557C8254D738F00B0DC32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58A557C7254D738F00B0DC32 /* RxMarblesAnimator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58A557C9254D738F00B0DC32 /* RxMarblesAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				58A557DB254D73A900B0DC32 /* Model */,
+				58A557DA254D73A400B0DC32 /* View */,
+				58A557DC254D73AD00B0DC32 /* ViewModel */,
+				5870CB3F255805BE00E65C4B /* Helpers */,
+				58A557CA254D738F00B0DC32 /* RxMarblesAnimatorApp.swift */,
+				58A557CC254D738F00B0DC32 /* ContentView.swift */,
+				58A557CE254D739300B0DC32 /* Assets.xcassets */,
+				58A557D3254D739300B0DC32 /* Info.plist */,
+				58A557D0254D739300B0DC32 /* Preview Content */,
+			);
+			path = RxMarblesAnimator;
+			sourceTree = "<group>";
+		};
+		58A557D0254D739300B0DC32 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				58A557D1254D739300B0DC32 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		58A557DA254D73A400B0DC32 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				58A557DE254D834900B0DC32 /* Home.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		58A557DB254D73A900B0DC32 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		58A557DC254D73AD00B0DC32 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58A557C6254D738F00B0DC32 /* RxMarblesAnimator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58A557D6254D739300B0DC32 /* Build configuration list for PBXNativeTarget "RxMarblesAnimator" */;
+			buildPhases = (
+				58A557C3254D738F00B0DC32 /* Sources */,
+				58A557C4254D738F00B0DC32 /* Frameworks */,
+				58A557C5254D738F00B0DC32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RxMarblesAnimator;
+			productName = RxMarblesAnimator;
+			productReference = 58A557C7254D738F00B0DC32 /* RxMarblesAnimator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58A557BF254D738F00B0DC32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					58A557C6254D738F00B0DC32 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = 58A557C2254D738F00B0DC32 /* Build configuration list for PBXProject "RxMarblesAnimator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 58A557BE254D738F00B0DC32;
+			productRefGroup = 58A557C8254D738F00B0DC32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58A557C6254D738F00B0DC32 /* RxMarblesAnimator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58A557C5254D738F00B0DC32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58A557D2254D739300B0DC32 /* Preview Assets.xcassets in Resources */,
+				58A557CF254D739300B0DC32 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58A557C3254D738F00B0DC32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58A557CD254D738F00B0DC32 /* ContentView.swift in Sources */,
+				5870CB412558061B00E65C4B /* SignalPositionPreferenceKey.swift in Sources */,
+				58A557DF254D834900B0DC32 /* Home.swift in Sources */,
+				58A557CB254D738F00B0DC32 /* RxMarblesAnimatorApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		58A557D4254D739300B0DC32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		58A557D5254D739300B0DC32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58A557D7254D739300B0DC32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"RxMarblesAnimator/Preview Content\"";
+				DEVELOPMENT_TEAM = 45JNFF5WM9;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = RxMarblesAnimator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vit.RxMarblesAnimator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		58A557D8254D739300B0DC32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"RxMarblesAnimator/Preview Content\"";
+				DEVELOPMENT_TEAM = 45JNFF5WM9;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = RxMarblesAnimator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vit.RxMarblesAnimator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58A557C2254D738F00B0DC32 /* Build configuration list for PBXProject "RxMarblesAnimator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58A557D4254D739300B0DC32 /* Debug */,
+				58A557D5254D739300B0DC32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58A557D6254D739300B0DC32 /* Build configuration list for PBXNativeTarget "RxMarblesAnimator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58A557D7254D739300B0DC32 /* Debug */,
+				58A557D8254D739300B0DC32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58A557BF254D738F00B0DC32 /* Project object */;
+}
