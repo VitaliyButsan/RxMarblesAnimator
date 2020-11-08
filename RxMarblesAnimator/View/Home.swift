@@ -10,45 +10,18 @@ import SwiftUI
 struct Home: View {
     
     private let bgGradient = RadialGradient(gradient: Gradient(colors: [Color.blue, Color.black]), center: .center, startRadius: 0, endRadius: 500)
-    
     @State private var touch = false
-    @State private var signalOffset: CGFloat = 0.0
-    @State private var signalPosition: CGFloat = 0.0
-    @State private var durationValue = 1.0
+    @StateObject private var viewModel = AnimatorViewModel()
 
     var body: some View {
         TabView {
             ZStack {
                 Rectangle().fill(bgGradient).ignoresSafeArea()
-                ZStack {
-                    Arrow().stroke(Color.black, lineWidth: 3)
-                    CompletionView(xOffset: 140)
-                    SignalView(xOffset: $signalOffset)
-                    CircleView(xOffset: 80, touch: $touch)
-                    CircleView(xOffset: 20, touch: $touch)
-                    CircleView(xOffset: -40, touch: $touch)
-                    CircleView(xOffset: -100, touch: $touch)
+                VStack(spacing: 30) {
+                    Sequence(marbles: viewModel.inputMarbles, touch: $touch)
+                    OperatorView(viewModel: viewModel, touch: $touch)
+                    Sequence(marbles: viewModel.outputMarbles, touch: $touch)
                 }
-                .padding(.horizontal)
-                .frame(width: UIScreen.main.bounds.width, height: 40)
-                
-                Button {
-                    withAnimation(Animation.easeIn(duration: durationValue)) {
-                        self.touch.toggle()
-                        self.signalOffset = UIScreen.main.bounds.width
-                    }
-                    DispatchQueue.main.asyncAfter(deadline: .now() + durationValue) {
-                        self.touch.toggle()
-                    }
-                    DispatchQueue.main.asyncAfter(deadline: .now() + durationValue) {
-                        self.signalOffset = 0.0
-                    }
-                } label: {
-                    Text("WaveButton")
-                }
-                .offset(y: 50)
-                .font(.title)
-                .foregroundColor(.white)
             }
             .tabItem {
                 Image(systemName: "square.grid.3x1.fill.below.line.grid.1x2")
@@ -70,44 +43,86 @@ struct Home: View {
     }
 }
 
-struct CircleView: View {
-    private let diameter: CGFloat = 20.0
-    let xOffset: CGFloat
+struct Sequence: View {
+    let marbles: [MarbleModel]
+    @Binding var touch: Bool
+    
+    var body: some View {
+        ZStack(alignment: .leading) {
+            Arrow().stroke(Color.black, lineWidth: 3)
+            SignalView(touch: $touch)
+            ForEach(marbles, id: \.xOffset) { Marble(marble: $0, touch: $touch) }
+            CompletionView()
+        }
+        .padding(.horizontal)
+        .frame(width: UIScreen.main.bounds.width, height: 40)
+    }
+}
+
+struct OperatorView: View {
+    @StateObject var viewModel: AnimatorViewModel
+    @State private var durationValue = 0.5
+    @Binding var touch: Bool
+    
+    var body: some View {
+        Button {
+            withAnimation(Animation.easeIn(duration: durationValue)) {
+                self.touch.toggle()
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + durationValue) {
+                self.touch.toggle()
+            }
+        } label: {
+            Text(viewModel.operatorType.description)
+                .frame(minWidth: 0, maxWidth: .infinity)
+                .padding()
+                .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.white))
+        }
+        .font(.title2)
+        .foregroundColor(.white)
+        .padding(.horizontal)
+    }
+}
+
+struct Marble: View {
+    private let diameter: CGFloat = 30.0
+    let marble: MarbleModel
     @Binding var touch: Bool
     
     var body: some View {
         ZStack {
             Circle()
                 .fill(Color.green)
-                .frame(width: diameter, height: diameter)
+                .opacity(touch ? 0 : 1)
+                .frame(width: touch ? diameter * 2 : diameter, height: touch ? diameter * 2 : diameter)
             Circle()
                 .fill(Color.green)
-                .opacity(touch ? 0 : 1)
-                .frame(width: touch ? diameter * 2.5 : diameter, height: touch ? diameter * 2.5 : diameter)
+                .frame(width: diameter, height: diameter)
+            Text("\(marble.title)")
         }
-        .frame(width: diameter * 2.5, height: diameter * 2.5)
-        .offset(x: xOffset)
+        .frame(width: diameter * 2, height: diameter * 2)
+        .offset(x: marble.xOffset)
     }
 }
 
 struct CompletionView: View {
-    let xOffset: CGFloat
     
     var body: some View {
         Rectangle()
             .fill(Color.black)
             .frame(width: 3, height: 20)
-            .offset(x: xOffset)
+            .offset(x: UIScreen.main.bounds.width - 60)
     }
 }
 
 struct SignalView: View {
-    @Binding var xOffset: CGFloat
+    @Binding var touch: Bool
+    let screenWidth = UIScreen.main.bounds.width
     
     var body: some View {
         SignalShape()
             .fill(Color.purple)
-            .offset(x: xOffset)
+            .offset(x: touch ? screenWidth : -40)
             .frame(height: 10)
     }
     

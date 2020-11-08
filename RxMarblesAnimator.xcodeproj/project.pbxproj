@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5870CB412558061B00E65C4B /* SignalPositionPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5870CB402558061B00E65C4B /* SignalPositionPreferenceKey.swift */; };
+		5870CB45255866C000E65C4B /* OperatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5870CB44255866C000E65C4B /* OperatorType.swift */; };
+		5870CB482558693400E65C4B /* MarbleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5870CB472558693400E65C4B /* MarbleModel.swift */; };
+		5870CB4D255869E300E65C4B /* AnimatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5870CB4C255869E300E65C4B /* AnimatorViewModel.swift */; };
 		58A557CB254D738F00B0DC32 /* RxMarblesAnimatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A557CA254D738F00B0DC32 /* RxMarblesAnimatorApp.swift */; };
 		58A557CD254D738F00B0DC32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A557CC254D738F00B0DC32 /* ContentView.swift */; };
 		58A557CF254D739300B0DC32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58A557CE254D739300B0DC32 /* Assets.xcassets */; };
@@ -17,6 +20,9 @@
 
 /* Begin PBXFileReference section */
 		5870CB402558061B00E65C4B /* SignalPositionPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalPositionPreferenceKey.swift; sourceTree = "<group>"; };
+		5870CB44255866C000E65C4B /* OperatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorType.swift; sourceTree = "<group>"; };
+		5870CB472558693400E65C4B /* MarbleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarbleModel.swift; sourceTree = "<group>"; };
+		5870CB4C255869E300E65C4B /* AnimatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorViewModel.swift; sourceTree = "<group>"; };
 		58A557C7254D738F00B0DC32 /* RxMarblesAnimator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxMarblesAnimator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58A557CA254D738F00B0DC32 /* RxMarblesAnimatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxMarblesAnimatorApp.swift; sourceTree = "<group>"; };
 		58A557CC254D738F00B0DC32 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +102,8 @@
 		58A557DB254D73A900B0DC32 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5870CB44255866C000E65C4B /* OperatorType.swift */,
+				5870CB472558693400E65C4B /* MarbleModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -103,6 +111,7 @@
 		58A557DC254D73AD00B0DC32 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				5870CB4C255869E300E65C4B /* AnimatorViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -176,7 +185,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5870CB4D255869E300E65C4B /* AnimatorViewModel.swift in Sources */,
 				58A557CD254D738F00B0DC32 /* ContentView.swift in Sources */,
+				5870CB482558693400E65C4B /* MarbleModel.swift in Sources */,
+				5870CB45255866C000E65C4B /* OperatorType.swift in Sources */,
 				5870CB412558061B00E65C4B /* SignalPositionPreferenceKey.swift in Sources */,
 				58A557DF254D834900B0DC32 /* Home.swift in Sources */,
 				58A557CB254D738F00B0DC32 /* RxMarblesAnimatorApp.swift in Sources */,
